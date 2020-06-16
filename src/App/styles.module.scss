@@ -1,0 +1,87 @@
+@import '../styles/mixins.scss';
+
+.app {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  .content {
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1311);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    max-width: 20.5rem;
+    padding: 2rem;
+    position: relative;
+    user-select: none;
+    z-index: 1;
+
+    @include breakpoint() {
+      margin: 3rem;
+      max-width: 24.5rem;
+    }
+
+    .me {
+      background: url('/me.jpg') center center no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      border: 0.25rem solid white;
+      height: 5.75rem;
+      margin-bottom: 0.5rem;
+      width: 5.75rem;
+
+      @include breakpoint() {
+        height: 7.5rem;
+        width: 7.5rem;
+      }
+    }
+
+    .social {
+      align-self: flex-start;
+      column-gap: 0.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 1rem;
+      row-gap: 0.5rem;
+
+      a {
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 2rem;
+
+        span {
+          display: none;
+        }
+
+        &.github {
+          background-image: url('/github.png');
+          width: 2rem;
+        }
+
+        &.linkedin {
+          background-image: url('/linkedin.png');
+          width: 2.34816667rem;
+        }
+      }
+    }
+  }
+
+  .photos {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    .photo {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+    }
+  }
+}
