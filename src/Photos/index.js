@@ -12,8 +12,8 @@ const DEFAULT_CAROUSEL_SETTINGS = {
   showArrows: false,
   showStatus: false,
   showThumbs: false,
-  swipeable: true,
-  transitionTime: 800,
+  swipeable: false,
+  transitionTime: 750,
   useKeyboardArrows: true,
 };
 
