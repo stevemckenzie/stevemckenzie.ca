@@ -10,7 +10,7 @@
   margin: 2rem;
   max-width: 24.5rem;
   padding: 2rem;
-  position: absolute;
+  position: fixed;
   @include bounceTransition();
   transition-property: all;
   user-select: none;
