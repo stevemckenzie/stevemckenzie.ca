@@ -11,7 +11,13 @@
     background: transparent;
     border: 0;
     cursor: pointer;
+    opacity: 1;
     padding: 0.5rem;
+    position: relative;
+    top: 0;
+    transition-property: opacity, top;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0, 1.4, 1, 1);
 
     &:before {
       background-color: rgba(white, 0.5);
@@ -33,6 +39,11 @@
       &:before {
         background-color: rgba(white, 0.75);
       }
+    }
+
+    &.hidden {
+      opacity: 0;
+      top: 2rem;
     }
 
     &.selected {
