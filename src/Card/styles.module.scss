@@ -31,8 +31,8 @@
     .me {
       border-width: 0.125rem;
       box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1311);
-      margin-bottom: 0;
       height: 3.75rem;
+      margin-bottom: 0;
       width: 3.75rem;
 
       &:hover {
@@ -70,6 +70,10 @@
     @include bounceTransition();
     transition-property: all;
     width: 5.75rem;
+
+    &:focus {
+      outline: none;
+    }
 
     &:hover {
       height: 5.5rem;
