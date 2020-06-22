@@ -15,9 +15,8 @@
     padding: 0.5rem;
     position: relative;
     top: 0;
+    @include bounceTransition();
     transition-property: opacity, top;
-    transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(0, 1.4, 1, 1);
 
     &:before {
       background-color: rgba(white, 0.5);
@@ -30,8 +29,8 @@
       width: 0.5rem;
 
       @include breakpoint() {
-        height: 0.75rem;
-        width: 0.75rem;
+        height: 0.6rem;
+        width: 0.6rem;
       }
     }
 
@@ -73,15 +72,27 @@
     }
 
     .carousel .control-dots {
+      background: linear-gradient(
+        to bottom,
+        hsla(0, 0%, 0%, 0) 0%,
+        hsla(0, 0%, 0%, 0.002) 8.3%,
+        hsla(0, 0%, 0%, 0.009) 16.5%,
+        hsla(0, 0%, 0%, 0.02) 24.5%,
+        hsla(0, 0%, 0%, 0.036) 32.3%,
+        hsla(0, 0%, 0%, 0.056) 39.9%,
+        hsla(0, 0%, 0%, 0.081) 47.3%,
+        hsla(0, 0%, 0%, 0.11) 54.4%,
+        hsla(0, 0%, 0%, 0.144) 61.3%,
+        hsla(0, 0%, 0%, 0.181) 67.8%,
+        hsla(0, 0%, 0%, 0.224) 74.1%,
+        hsla(0, 0%, 0%, 0.27) 80%,
+        hsla(0, 0%, 0%, 0.321) 85.6%,
+        hsla(0, 0%, 0%, 0.377) 90.8%,
+        hsla(0, 0%, 0%, 0.436) 95.6%,
+        hsla(0, 0%, 0%, 0.5) 100%
+      );
       margin: 0;
       padding: 0.5rem 0;
-      transition: 0.3s background-color;
-
-      @include breakpoint() {
-        &:hover {
-          background-color: rgba(40, 40, 40, 0.25);
-        }
-      }
     }
   }
 }

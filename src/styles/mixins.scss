@@ -3,3 +3,8 @@
      @content;
   }
 }
+
+@mixin bounceTransition() {
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0, 1.4, 1, 1);
+}
