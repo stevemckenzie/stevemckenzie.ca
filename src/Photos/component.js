@@ -21,11 +21,11 @@ const Photos = ({ photos, ...props }) => {
   return (
     <div className={styles.photos}>
       <Carousel renderIndicator={renderIndicator} {...props}>
-        {photos.map((photo) => (
+        {photos.map(({ file, style = {} }) => (
           <div
             className={styles.photo}
-            key={photo}
-            style={{ backgroundImage: `url('/photos/${photo}')` }}
+            key={file}
+            style={{ backgroundImage: `url('${file}')`, ...style }}
           />
         ))}
       </Carousel>
@@ -34,7 +34,7 @@ const Photos = ({ photos, ...props }) => {
 };
 
 Photos.propTypes = {
-  photos: PropTypes.arrayOf(PropTypes.string),
+  photos: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Photos;
