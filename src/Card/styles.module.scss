@@ -35,11 +35,6 @@
       margin-bottom: 0;
       width: 3.75rem;
 
-      &:hover {
-        height: 4rem;
-        width: 4rem;
-      }
-
       @include breakpoint() {
         border-width: 0.25rem;
         height: 6.25rem;
@@ -73,11 +68,6 @@
 
     &:focus {
       outline: none;
-    }
-
-    &:hover {
-      height: 5.5rem;
-      width: 5.5rem;
     }
 
     @include breakpoint() {
