@@ -12,17 +12,12 @@
     color: white;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    max-width: 20.5rem;
+    margin: 2rem;
+    max-width: 24.5rem;
     padding: 2rem;
-    position: relative;
+    position: absolute;
     user-select: none;
     z-index: 1;
-
-    @include breakpoint() {
-      margin: 3rem;
-      max-width: 24.5rem;
-    }
 
     .me {
       background: url('/me.jpg') center center no-repeat;
@@ -66,22 +61,6 @@
           width: 2.34816667rem;
         }
       }
-    }
-  }
-
-  .photos {
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 0;
-
-    .photo {
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 100vh;
     }
   }
 }
