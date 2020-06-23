@@ -73,11 +73,6 @@
     @include breakpoint() {
       height: 7.5rem;
       width: 7.5rem;
-
-      &:hover {
-        height: 7.25rem;
-        width: 7.25rem;
-      }
     }
   }
 
