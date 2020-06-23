@@ -11,7 +11,7 @@ export const DEFAULT_CAROUSEL_SETTINGS = {
   showStatus: false,
   showThumbs: false,
   swipeable: true,
-  transitionTime: 750,
+  transitionTime: 350,
   useKeyboardArrows: true,
 };
 export const TRANSITION_DELAY = 5000;
