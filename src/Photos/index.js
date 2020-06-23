@@ -39,7 +39,6 @@ const Photos = () => {
       {...DEFAULT_CAROUSEL_SETTINGS}
       photos={photos}
       showIndicators={showIndicators}
-      useKeyboardArrows={showIndicators}
     />
   );
 };
