@@ -21,10 +21,7 @@ const Photos = ({ photos, showIndicators, ...props }) => {
 
   return (
     <div className={styles.photos}>
-      <Carousel
-        renderIndicator={renderIndicator}
-        {...props}
-      >
+      <Carousel renderIndicator={renderIndicator} {...props}>
         {photos.map(({ file, style = {} }) => (
           <div
             className={styles.photo}
