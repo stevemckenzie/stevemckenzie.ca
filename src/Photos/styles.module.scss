@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  position: relative;
-  z-index: 0;
 
   .indicator {
     background: transparent;
@@ -64,13 +62,6 @@
   }
 
   :global {
-    .carousel,
-    .carousel-root,
-    .slider,
-    .slider-wrapper {
-      height: 100vh;
-    }
-
     .carousel .control-dots {
       margin: 0;
       padding: 0.5rem 0;
