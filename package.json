@@ -14,7 +14,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.0.0",
-    "react-responsive-carousel": "^3.2.8",
+    "react-responsive-carousel": "git+https://github.com/stevemckenzie/react-responsive-carousel.git",
     "react-scripts": "3.4.1"
   },
   "scripts": {

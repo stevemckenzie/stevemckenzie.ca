@@ -10,7 +10,7 @@ export const DEFAULT_CAROUSEL_SETTINGS = {
   showArrows: false,
   showStatus: false,
   showThumbs: false,
-  swipeable: false,
+  swipeable: true,
   transitionTime: 750,
   useKeyboardArrows: true,
 };
