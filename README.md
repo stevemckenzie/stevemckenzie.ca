@@ -1,1 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My goal was to keep things fairly simple for my own site using [Create React App](https://github.com/facebook/create-react-app) but I also didn't want to hardcode any photos. Since I deploy this to GitHub Pages as a static site, I decided to go with the option of adding a build script using Node that fetches all the photos in a folder and passes them over to the React app as an environment variable.
+
+There are 2 different versions of each photo (small, large). On mount of `<Photos />`, the component will decide which version to use based on the browser's viewport size. With wanting to display a number of large photos, the component will display the first photo on its own and after a short delay, the rest of the photos are added to the `<Carousel />` as a way to queue up some of the loading.
+
+Once I reached a point of finalizing which photos I wanted to include, and doing some QA on multiple screen sizes, I realized that I can't rely on `background-position: center center; background-size: cover;` to show the best frame for each photo and fill the entire page while respecing the image's aspect ratio.
+
+Since I was trying to avoid hardcoding any photos in components / CSS, I ended up adding JSON files in each photo folder as an optional way to accomodate any custom styles needed. I thought at first this was only going to be needed for a few photos but, as I played around with positioning of each photo, I ended up with custom values for most of them.
