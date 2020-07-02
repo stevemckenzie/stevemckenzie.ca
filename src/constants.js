@@ -1,7 +1,7 @@
 export const BIO = 'Builder of stuff, explorer of things.';
 export const NAME = 'Steve McKenzie';
 
-export const BREAKPOINT = 768;
+export const BREAKPOINT = 769;
 export const DEFAULT_CAROUSEL_SETTINGS = {
   autoPlay: true,
   dynamicHeight: false,
