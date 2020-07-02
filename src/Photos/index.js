@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Component from './component';
 import { BREAKPOINT, DEFAULT_CAROUSEL_SETTINGS, TRANSITION_DELAY } from '../constants';
 
-const Photos = () => {
+const Photos = (props) => {
   const [showIndicators, setShowIndicators] = useState(false);
   const [photoList, setPhotoList] = useState([]);
   const useSmall = document.body.clientWidth < BREAKPOINT;
@@ -39,6 +39,7 @@ const Photos = () => {
       {...DEFAULT_CAROUSEL_SETTINGS}
       photos={photos}
       showIndicators={showIndicators}
+      {...props}
     />
   );
 };

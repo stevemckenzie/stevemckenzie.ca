@@ -1,0 +1,73 @@
+@import '../styles/mixins.scss';
+
+.menu {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2;
+
+  .items {
+    background-color: rgba(black, 0.75);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1311);
+    display: none;
+    margin-top: 0.5rem;
+    overflow: hidden;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          display: block;
+          font-size: 0.875rem;
+          padding: 0.5rem 1rem;
+          transition: 0.15s background-color;
+
+          &:hover {
+            background-color: rgba(white, 0.05);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .toggle {
+    align-self: flex-end;
+    background: url('/menu.svg') center center no-repeat;
+    background-size: cover;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1311);
+    cursor: pointer;
+    height: 2rem;
+    opacity: 0.75;
+    position: relative;
+    transition: 0.15s opacity;
+    width: 2rem;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    > span {
+      display: none;
+    }
+  }
+
+  &.opened {
+    .items {
+      display: block;
+    }
+
+    .toggle {
+      opacity: 1;
+    }
+  }
+}

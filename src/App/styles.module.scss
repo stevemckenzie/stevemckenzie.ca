@@ -1,5 +1,23 @@
+@import '../styles//mixins.scss';
+
 .app {
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  .content {
+    background-color: rgba(black, 0.5);
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+    color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0;
+    padding: 6rem 1rem 1rem;
+    z-index: 1;
+
+    @include breakpoint() {
+      padding: 8rem;
+    }
+  }
 }

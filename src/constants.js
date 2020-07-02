@@ -1,6 +1,9 @@
 export const BIO = 'Builder of stuff, explorer of things.';
 export const NAME = 'Steve McKenzie';
 
+export const GITHUB_URL = 'https://github.com/stevemckenzie';
+export const LINKEDIN_URL = 'https://www.linkedin.com/in/steve-mckenzie';
+
 export const BREAKPOINT = 769;
 export const DEFAULT_CAROUSEL_SETTINGS = {
   autoPlay: true,

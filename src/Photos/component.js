@@ -6,12 +6,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import styles from './styles.module.scss';
 
-const Photos = ({ photos, showIndicators, ...props }) => {
-  const renderIndicator = (onClick, isSelected, index, label) => (
+const Photos = ({ hideIndicators, photos, showIndicators, ...props }) => {
+  const renderIndicator = (onClick, isSelected, index) => (
     <button
       className={classnames(styles.indicator, {
         [styles.selected]: isSelected,
-        [styles.hidden]: !showIndicators,
+        [styles.hidden]: !showIndicators || hideIndicators,
       })}
       onClick={onClick}
     >
@@ -35,6 +35,7 @@ const Photos = ({ photos, showIndicators, ...props }) => {
 };
 
 Photos.propTypes = {
+  hideIndicators: PropTypes.bool,
   photos: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 

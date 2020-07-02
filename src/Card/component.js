@@ -1,13 +1,14 @@
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import styles from './styles.module.scss';
-import { BIO, NAME } from '../constants';
+import { BIO, GITHUB_URL, LINKEDIN_URL, NAME } from '../constants';
 
-const Card = ({ collapsed, toggle }) => (
+const Card = forwardRef(({ collapsed, toggle }, ref) => (
   <div
     className={classnames(styles.card, { [styles.collapsed]: collapsed })}
+    ref={ref}
     title={`${NAME} - ${BIO}`}
   >
     <button className={styles.me} onClick={toggle} type="button" />
@@ -16,7 +17,7 @@ const Card = ({ collapsed, toggle }) => (
     <div className={styles.social}>
       <a
         className={styles.github}
-        href="https://github.com/stevemckenzie"
+        href={GITHUB_URL}
         rel="noopener noreferrer"
         target="_blank"
         title="GitHub"
@@ -25,7 +26,7 @@ const Card = ({ collapsed, toggle }) => (
       </a>
       <a
         className={styles.linkedin}
-        href="https://www.linkedin.com/in/steve-mckenzie"
+        href={LINKEDIN_URL}
         rel="noopener noreferrer"
         target="_blank"
         title="LinkedIn"
@@ -34,7 +35,7 @@ const Card = ({ collapsed, toggle }) => (
       </a>
     </div>
   </div>
-);
+));
 
 Card.propTypes = {
   collapsed: PropTypes.bool,

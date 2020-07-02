@@ -1,15 +1,15 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-import Card from '../Card';
-import Photos from '../Photos';
+import Component from './component';
 
-import styles from './styles.module.scss';
+const App = () => {
+  const location = useLocation();
+  const showContent = location.pathname !== '/';
 
-const App = () => (
-  <div className={styles.app}>
-    <Photos />
-    <Card />
-  </div>
-);
+  return (
+    <Component showContent={showContent} />
+  );
+}
 
 export default App;

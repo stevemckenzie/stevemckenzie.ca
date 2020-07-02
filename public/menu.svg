@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M28,0 C12.561,0 0,12.561 0,28 C0,43.439 12.561,56 28,56 C43.439,56 56,43.439 56,28 C56,12.561 43.439,0 28,0 Z M39.1428571,41 L16.8571429,41 C15.832,41 15,40.104 15,39 C15,37.896 15.832,37 16.8571429,37 L39.1428571,37 C40.168,37 41,37.896 41,39 C41,40.104 40.168,41 39.1428571,41 Z M39.1428571,30 L16.8571429,30 C15.832,30 15,29.104 15,28 C15,26.896 15.832,26 16.8571429,26 L39.1428571,26 C40.168,26 41,26.896 41,28 C41,29.104 40.168,30 39.1428571,30 Z M39.1428571,19 L16.8571429,19 C15.832,19 15,18.104 15,17 C15,15.896 15.832,15 16.8571429,15 L39.1428571,15 C40.168,15 41,15.896 41,17 C41,18.104 40.168,19 39.1428571,19 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

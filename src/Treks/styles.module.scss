@@ -1,0 +1,13 @@
+.treks {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  iframe {
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    flex: 1;
+    overflow: hidden;
+  }
+}
